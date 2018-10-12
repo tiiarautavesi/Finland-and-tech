@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Vidaloka|Source+Sans+Pro');
+
+h1 {
+  font-family: 'Vidaloka', serif;
+  font-size: 3vw;
+  padding: 2vw 2vw 0vw;
+  text-align: center;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6vw;
+  padding: 0 2vw;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.phone {
+  height: 55vw;
+  width: 30vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.1vw;
+  border-radius: 3vw;
+  background: rgb(0, 0, 0);
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(140, 140, 140, 1) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(140, 140, 140, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(140, 140, 140, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#8c8c8c', GradientType=1);
+}
+
+/* IE6-9 fallback on horizontal gradient */
+.phone:before {
+  content: "";
+  position: absolute;
+  height: 5vw;
+  width: 0.6vw;
+  margin-left: 29.7vw;
+  margin-top: 8vw;
+  border-radius: 0 1vw 1vw 0;
+  background: #6d6d6d;
+  box-shadow: 0 4vw #6d6d6d, 0 11vw #6d6d6d;
+}
+
+.phone:after {
+  content: "";
+  position: absolute;
+  height: 3vw;
+  width: 7vw;
+  margin-left: 11.5vw;
+  margin-top: 50.8vw;
+  border-radius: 5vw;
+  background: rgb(0, 0, 0);
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(140, 140, 140, 1) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(140, 140, 140, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(140, 140, 140, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#8c8c8c', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  border: 0.1vw solid #636363
+}
+
+.screen {
+  height: 49vw;
+  width: 28vw;
+  margin: 1vw;
+  position: absolute;
+  border-radius: 2.5vw;
+  overflow-y: scroll;
+  background: #000;
+}
+
+.screen:before {
+  content: "";
+  position: absolute;
+  height: 2vw;
+  width: 7vw;
+  margin-left: 10.5vw;
+  margin-top: -0.5vw;
+  border-radius: 0 0 1vw 1vw;
+  background: #6d6d6d;
+}
+
+.freedom-of-speach {
+  background: #fff;
+  color: #000;
+}
+
+.climate-change {
+  background: #fff;
+  background-image: url('../img/snow_1.jpg');
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  color: white;
+  background-position: center;
+}
+
+.education {
+  background: #000;
+  color: #5ebc00;
+}
+
+.education h1 {
+  font-family: monospace;
+}
+
+.education p {
+  font-family: monospace;
+}
+
+.hide {
+  display: none;
+}
+
+.hotspot {
+  margin: 5vw;
+  display: block;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 10vw;
+  background: #ff7bac;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(255, 123, 172, 0.6);
+  animation: pulse 2s infinite;
+  position: absolute;
+}
+
+.hotspot:hover {
+  animation: none;
+  background: #000;
+}
+
+.hotspot1 {
+  top: 38.5vw;
+  left: 45vw;
+}
+
+.hotspot2 {
+  top: 31.5vw;
+  left: 69.8vw;
+}
+
+.hotspot3 {
+  top: 25.5vw;
+  left: 23vw;
+}
+
+.hotspot4 {
+  top: 14vw;
+  left: 48.3vw;
+}
+
+button {
+  position: absolute;
+  z-index: 1;
+  bottom: 5vw;
+  left: 8vw;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 5vw;
+  font-size: 2vw;
+  background: #5ebc00;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.b2 {
+  background: red;
+  left: 16vw;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 123, 172, 0.6);
+    box-shadow: 0 0 0 0 rgba(255, 123, 172, 0.4);
+  }
+
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(255, 123, 172, 0);
+    box-shadow: 0 0 0 10px rgba(255, 123, 172, 0);
+  }
+
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 123, 172, 0);
+    box-shadow: 0 0 0 0 rgba(255, 123, 172, 0);
+  }
+}
