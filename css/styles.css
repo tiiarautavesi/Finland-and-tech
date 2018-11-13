@@ -166,6 +166,28 @@ p {
   left: 48.3vw;
 }
 
+.selectLanguage {
+  position: absolute;
+  z-index: 1;
+  bottom: 12vw;
+  left: 7vw;
+  width: 14vw;
+  height: 3vw;
+  border-radius: 5vw;
+  font-size: 2vw;
+}
+
+.disclamer {
+  position: absolute;
+  z-index: 1;
+  bottom: 3vw;
+  width: 80%;
+  border-radius: 5vw;
+  font-size: 1.5vw;
+  color: white;
+  display: none;
+}
+
 button {
   position: absolute;
   z-index: 1;
@@ -185,6 +207,14 @@ button {
 .b2 {
   background: red;
   left: 16vw;
+}
+
+footer {
+  position: absolute;
+  bottom: 1vw;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  width: 100%;
 }
 
 @-webkit-keyframes pulse {

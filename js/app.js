@@ -3,6 +3,9 @@ var phone = $('.phone');
 var content = "";
 var screen = $('.screen');
 var myVideo = document.getElementById("video1");
+var englishAudio = document.getElementById("audio-eng");
+var swedishAudio = document.getElementById("audio-swe");
+var language = $('.selectLanguage').val();
 
 $('.overlay').on('click', function () {
   console.log("clicked");
@@ -15,6 +18,8 @@ $('.overlay').on('click', function () {
     $('.overlay').addClass('hide');
     screen.removeClass(spot);
     myVideo.pause();
+    englishAudio.pause();
+    swedishAudio.pause();
   }
 });
 
@@ -30,8 +35,28 @@ $('.hotspot').on('click', function () {
 });
 
 function answer() {
-  myVideo.play();
-  $('button').addClass("hide");
+  var language = $('.selectLanguage').val();
+  if (language === "finnish") {
+    myVideo.play();
+    $('button').addClass("hide");
+    $('.selectLanguage').addClass("hide");
+  } else if (language === "english") {
+    myVideo.play();
+    $('video').prop('muted', true);
+    englishAudio.play();
+    console.log(englishAudio);
+    $('button').addClass("hide");
+    $('.selectLanguage').addClass("hide");
+    $('.disclamer').show();
+  } else if (language === "swedish") {
+    myVideo.play();
+    $('video').prop('muted', true);
+    swedishAudio.play();
+    console.log(englishAudio);
+    $('button').addClass("hide");
+    $('.selectLanguage').addClass("hide");
+    $('.disclamer').show();
+  }
 }
 
 function deny() {
